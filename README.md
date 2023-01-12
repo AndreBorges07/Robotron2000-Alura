@@ -1,3 +1,5 @@
+![Status-Concluído-green](https://user-images.githubusercontent.com/93163125/212116582-4c47ccbd-9063-4192-b3b3-b082917d9d06.svg)
+
 # Robotron2000-Alura
 
 ![All Rorobtrons](https://user-images.githubusercontent.com/93163125/212112958-1686afc3-0781-47b2-8087-def644c07f6e.png)
