@@ -1,0 +1,336 @@
+:root {
+    --main-cinza: #CCCCCC;
+    --main-branco: #FFFFFF;
+    --main-preto: #000000;
+    --vermelho-escuro-degrade: linear-gradient(180deg,#460000 0%, #260000 100%);
+    --vermelho-radial: radial-gradient(#ff5b5b 0%, #440101 100%);
+    --azul-radial: radial-gradient(#5b5bff 0%, #01014d 100%);
+    --amarelo-radial: radial-gradient(#fffc5b 0%, #4e4c00 100%);
+    --branco-radial: radial-gradient(#dfdfdf 0%, #393939 100%);
+    --preto-radial: radial-gradient(#5c5858 0%, #141414 100%);
+    --rosa-radial: radial-gradient(#ff4fd3 0%, #3a1230 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body, input {
+    font-family: 'Teko', sans-serif;
+}
+
+.fundo {
+    background: url(../img/fundo-vermelho.jpg);
+    background-position: center center;
+    background-size: cover cover;
+    padding: 0;
+    margin: 0;
+    font-weight: 300; 
+}
+
+.fundo-azul{
+    background: url(../img/fundo-azul.jpg);
+    background-position: center center;
+    background-size: cover cover;
+}
+
+.fundo-amarelo{
+    background: url(../img/fundo-amarelo.jpg);
+    background-position: center center;
+    background-size: cover cover;
+}
+
+.fundo-branco{
+    background: url(../img/fundo-branco.jpg);
+    background-position: center center;
+    background-size: cover cover;
+}
+
+.fundo-preto{
+    background: url(../img/fundo-preto.jpg);
+    background-position: center center;
+    background-size: cover cover;
+}
+
+.fundo-rosa{
+    background: url(../img/fundo-rosa.jpg);
+    background-position: center center;
+    background-size: cover cover;
+}
+
+main {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 8vw 10vh 12vw;
+    display: flex;
+    gap: 1vw;
+}
+
+.robotron {
+    background: url(../img/estrutura.png) no-repeat;
+    background-position: center center;
+    margin: 0;
+    flex-basis: 40%;
+    position: relative;
+}
+
+.robo {
+    height: 110%;
+    z-index: 1;
+    position: absolute;
+    left: -20%;
+    top: -5%;
+}
+
+.titulo {
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 130px;
+    position: absolute;
+    bottom: 7rem;
+    left: -3rem;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #ffffffcc
+}
+
+.box {
+    background: rgba(47, 0, 0, 0.6);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 5px solid var(--main-cinza);
+    height: 85%;
+}
+
+.box-azul{
+    background: rgba(3, 0, 47, 0.6);
+}
+
+.box-amarelo{
+    background: rgba(43, 47, 0, 0.6);
+}
+
+.box-branco{
+    background: rgba(108, 108, 108, 0.6);
+}
+
+.box-preto{
+    background: rgba(23, 23, 23, 0.6);
+}
+
+.box-rosa{
+    background: rgba(47, 0, 36, 0.6);
+}
+
+
+
+/****************************** Equipamentos *****/
+
+.equipamentos {
+    flex-basis: 32%;
+    
+}
+
+.montador {
+    height: 100%;;
+}
+
+.montador-conteudo {
+    padding: 2em 10%;
+}
+
+.peca {
+    padding: 1em 0;
+}
+
+.peca-titulo {
+    color: var(--main-branco);
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.controle {
+    background: var(--vermelho-radial);
+    border-radius: 25px;
+    float: right;
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.controle-azul{
+    background: var(--azul-radial);
+}
+
+.controle-amarelo{
+    background: var(--amarelo-radial);
+}
+
+.controle-branco{
+    background: var(--branco-radial);
+}
+
+.controle-preto{
+    background: var(--preto-radial);
+}
+
+.controle-rosa{
+    background: var(--rosa-radial);
+}
+
+.controle-contador {
+    width: 40px;
+    height: 35px;
+    background: none;
+    border: 0;
+    margin: 0 1rem;
+    color: var(--main-branco);
+    text-align: center;
+    font-size: 2.5em;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.controle-ajuste {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    border-radius: 50%;
+    color: var(--main-cinza);
+    font-size: 4em;
+    background: #00000071;
+    text-align: center;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
+
+.linha {
+    border-color: var(--main-cinza);
+}
+
+.producao {
+    margin-top: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 0.2em 1em;
+    float: right;
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.producao:hover {
+    background: var(--vermelho-escuro-degrade);
+    color: var(--main-branco)
+}
+
+
+
+/****************************** Estatísticas *****/
+.estatisticas {
+    flex-basis: 23%;
+    padding: 2em 2em 0;
+}
+
+.estatistica {
+    color: var(--main-branco);
+    display: flex;
+    align-items: flex-start;
+    height: 25%;
+}
+
+.estatistica-titulo {
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--main-cinza);
+    flex-basis: 40%;
+    text-transform: uppercase;
+    order: 1
+}
+
+.estatistica-valor {
+    flex-basis: 60%;
+    position: relative;
+    margin: 10px 0 0;
+    order: 2;
+    margin: -10px 0 0;
+}
+
+.estatistica-valor::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border: 1px solid var(--main-cinza);
+    border-radius: 50%;
+}
+
+.estatistica-numero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.estatistica:nth-child(2n) .estatistica-titulo {
+    order: 2;
+    text-align: right;
+}
+
+.estatistica:nth-child(2n) .estatistica-valor {
+    order: 1;
+    flex-basis: 35%;
+    margin: 10px 0 0;
+}
+
+.alterar {
+    margin: 2px;
+    width: 200px;
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
+   margin: 0 5em;
+   justify-items: center;
+}
+
+.alterar:hover{
+    background: var(--main-cinza);
+    color: var(--main-preto);
+
+}
+
+@media screen and (max-width: 1600px) {
+    body { 
+        font-size: 14px;
+    }
+    main {
+        width: 90vw;
+        height: 80vh;
+        margin: 5vh auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body { 
+        font-size: 13px;
+    }
+
+    main {
+        width: 96vw;
+        height: 80vh;
+        margin: 10vh auto;
+    }
+}
