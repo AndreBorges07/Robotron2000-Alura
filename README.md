@@ -5,10 +5,13 @@
 
 # Descrição
 Projeto feito para o desenvolvimento e aprendizado de JavaScript. Também usei HTML e CSS. Fiz uma adaptação em que não só o robô mudava de cor, mas sim todos os elementos, praticando ainda mais os conceitos adquiridos de HTML, CSS e Java. 
+<br>Acesse o projeto aqui: https://robotron2000-alura-all-colors.vercel.app/
 
 # Tecnologias utilizadas
 
-![HTML-CSS-JS](https://user-images.githubusercontent.com/93163125/212115495-2385821e-20f8-4cf8-888c-83fb40bc1b44.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/93163125/212195910-dcb71905-074e-4033-8aa8-38b455d2dbab.png" width ="200px" />
+</div>
 
 # Aprendizado
 
