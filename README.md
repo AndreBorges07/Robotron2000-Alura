@@ -24,3 +24,6 @@ Projeto feito para o desenvolvimento e aprendizado de JavaScript. Também usei H
     <li>• Extra - Além do desafio proposto em mudar a cor do Robô com o click, me esforcei para mudar a cor de todo o cenário. </li>
 </ul>
 
+# Certificado: JAVASCRIPT: MANIPULANDO O DOM
+
+Acesse aqui: https://cursos.alura.com.br/certificate/andreBorges07/javascript-manipulando-dom
